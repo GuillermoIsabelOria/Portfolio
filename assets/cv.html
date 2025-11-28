@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Guillermo Isabel Oria</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .cv-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #27ae60;
+        }
+        
+        .header {
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #27ae60;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+        
+        .contact-info a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .entry {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #d5f4e6;
+        }
+        
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .entry-title {
+            font-weight: bold;
+            color: #27ae60;
+            font-size: 1.1em;
+        }
+        
+        .entry-subtitle {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .entry-date {
+            color: #999;
+            font-size: 0.95em;
+        }
+        
+        .entry-description {
+            color: #555;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .skill-category {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .skill-category h4 {
+            color: #27ae60;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .skill-category p {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .languages {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .language {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        
+        .language-name {
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 5px;
+        }
+        
+        .language-level {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .entry-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            
+            .cv-container {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Guillermo Isabel Oria</h1>
+            <p>Desarrollador Web Full Stack</p>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:isabeloriaguille@gmail.com">isabeloriaguille@gmail.com</a></span>
+                <span>📱 <a href="tel:+34634855084">+34 634 85 50 84</a></span>
+                <span>🔗 <a href="https://www.linkedin.com/in/guillermo-isabel-oria-03b928338" target="_blank">LinkedIn</a></span>
+                <span>💻 <a href="https://github.com/GuillermoIsabelOria" target="_blank">GitHub</a></span>
+            </div>
+        </div>
+
+        <!-- Perfil Profesional -->
+        <div class="section">
+            <div class="section-title">Perfil Profesional</div>
+            <p>Desarrollador web apasionado con 2 años de experiencia en el sector. Especializado en la creación de aplicaciones web modernas y escalables utilizando tecnologías como React, Node.js y bases de datos NoSQL y relacionales. Con sólidos conocimientos en desarrollo full stack, capaz de trabajar en proyectos completos desde el diseño hasta la implementación y puesta en producción.</p>
+        </div>
+
+        <!-- Experiencia Laboral -->
+        <div class="section">
+            <div class="section-title">Experiencia Laboral</div>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Desarrollador Web Full Stack</div>
+                        <div class="entry-subtitle">Empresa/Proyecto Actual</div>
+                    </div>
+                    <div class="entry-date">Últimos 2 años</div>
+                </div>
+                <div class="entry-description">
+                    • Desarrollo de aplicaciones web usando React y Vue.js<br>
+                    • Creación de APIs REST con Node.js y Express<br>
+                    • Diseño y optimización de bases de datos<br>
+                    • Implementación de autenticación y seguridad<br>
+                    • Trabajo en equipos ágiles (Scrum)
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Desarrollador Junior</div>
+                        <div class="entry-subtitle">Primeros Proyectos / Formación</div>
+                    </div>
+                    <div class="entry-date">Anteriores</div>
+                </div>
+                <div class="entry-description">
+                    • Desarrollo de sitios web con HTML, CSS y JavaScript<br>
+                    • Diseño responsive y mobile-first<br>
+                    • Versionamiento con Git y GitHub<br>
+                    • Debugging y resolución de problemas
+                </div>
+            </div>
+        </div>
+
+        <!-- Habilidades Técnicas -->
+        <div class="section">
+            <div class="section-title">Habilidades Técnicas</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <p>HTML5, CSS3, JavaScript (ES6+), React, Vue.js, Bootstrap, Responsive Design, Tailwind CSS</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Backend</h4>
+                    <p>Node.js, Express, Python, RESTful APIs, Autenticación JWT, Middleware</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Bases de Datos</h4>
+                    <p>MongoDB, MySQL, PostgreSQL, SQL, NoSQL, Diseño de esquemas</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Herramientas</h4>
+                    <p>Git, GitHub, VS Code, Figma, npm, Webpack, Postman</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyectos Destacados -->
+        <div class="section">
+            <div class="section-title">Proyectos Destacados</div>
+            
+            <div class="entry">
+                <div class="entry-title">Plataforma de E-commerce Moderna</div>
+                <div class="entry-description">
+                    Desarrollo de plataforma de compra en línea con carrito dinámico, sistema de pagos integrado y panel de administración. Tecnologías: React, Node.js, MongoDB, Stripe API.
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-title">Aplicación de Gestión de Tareas</div>
+                <div class="entry-description">
+                    App colaborativa para gestionar tareas en equipo con notificaciones en tiempo real y reportes analíticos. Tecnologías: Vue.js, Express, PostgreSQL, Socket.io.
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-title">Portal de Análisis de Datos</div>
+                <div class="entry-description">
+                    Dashboard interactivo para visualizar datos en tiempo real con gráficos avanzados. Tecnologías: React, Python, Chart.js, D3.js.
+                </div>
+            </div>
+        </div>
+
+        <!-- Formación Académica -->
+        <div class="section">
+            <div class="section-title">Formación Académica</div>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Desarrollo Web Full Stack</div>
+                        <div class="entry-subtitle">Bootcamp / Curso Online</div>
+                    </div>
+                    <div class="entry-date">2023-2024</div>
+                </div>
+                <div class="entry-description">
+                    Formación intensiva en desarrollo web moderno, incluyendo frontend, backend y bases de datos. Certificación completada con éxito.
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Formación Complementaria</div>
+                        <div class="entry-subtitle">Cursos en línea y autodidacta</div>
+                    </div>
+                    <div class="entry-date">Continuo</div>
+                </div>
+                <div class="entry-description">
+                    • Certificaciones en React, Node.js y bases de datos<br>
+                    • Cursos en plataformas como Udemy, Coursera y freeCodeCamp<br>
+                    • Participación en comunidades de desarrollo
+                </div>
+            </div>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="section">
+            <div class="section-title">Idiomas</div>
+            <div class="languages">
+                <div class="language">
+                    <div class="language-name">Español</div>
+                    <div class="language-level">Nativo</div>
+                </div>
+                <div class="language">
+                    <div class="language-name">Inglés</div>
+                    <div class="language-level">Intermedio-Avanzado</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificaciones -->
+        <div class="section">
+            <div class="section-title">Certificaciones</div>
+            
+            <div class="entry">
+                <div class="entry-title">Certificado en Desarrollo Web Full Stack</div>
+                <div class="entry-description">Bootcamp de programación web intensivo de 600+ horas</div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-title">Certificado en React</div>
+                <div class="entry-description">Especialización en React.js y desarrollo de componentes avanzados</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
