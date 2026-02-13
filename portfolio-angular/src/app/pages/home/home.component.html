@@ -1,0 +1,105 @@
+<!-- ===== SECCIÓN HERO ===== -->
+<section class="hero bg-gradient-verde text-white py-5 py-lg-0">
+  <div class="container-fluid h-100">
+    <div class="row align-items-center h-100 min-vh-100">
+      <!-- Texto principal con interpolación -->
+      <div class="col-lg-6 py-5">
+        <h1 class="display-4 fw-bold mb-3">¡Hola! Soy {{ nombre }}</h1>
+        <p class="lead mb-4">{{ descripcion }}</p>
+
+        <!-- Botones de navegación con RouterLink -->
+        <div class="d-flex gap-3 flex-wrap">
+          <a routerLink="/portfolio" class="btn btn-light btn-lg fw-bold">
+            <i class="fas fa-briefcase me-2"></i>Ver mis Proyectos
+          </a>
+          <a routerLink="/contact" class="btn btn-outline-light btn-lg fw-bold">
+            <i class="fas fa-envelope me-2"></i>Contactarme
+          </a>
+        </div>
+
+        <!-- Redes sociales con *ngFor -->
+        <div class="mt-5">
+          <a *ngFor="let social of socialLinks"
+             [href]="social.url"
+             target="_blank"
+             class="text-white me-3">
+            <i [class]="social.icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Imagen de perfil -->
+      <div class="col-lg-6 text-center">
+        <div class="hero-image">
+          <img src="https://ui-avatars.com/api/?name=Guillermo+Isabel&size=300&background=1e8449&color=fff&rounded=true&bold=true&font-size=0.33"
+               alt="Foto de Perfil - Guillermo Isabel Oria"
+               class="img-fluid rounded-circle border border-5 border-light shadow-lg"
+               style="max-width: 300px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN SOBRE MÍ ===== -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center text-verde fw-bold mb-5 display-5">
+      {{ 'sobre mí' | titlecase }}
+    </h2>
+
+    <div class="row align-items-center">
+      <!-- Imagen -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop"
+             alt="Sobre Mí"
+             class="img-fluid rounded shadow">
+      </div>
+
+      <!-- Contenido con *ngIf y *ngFor -->
+      <div class="col-lg-6">
+        <p class="fs-5 text-muted">{{ bio }}</p>
+
+        <!-- Contenido extra con *ngIf -->
+        <p *ngIf="showAbout" class="fs-5 text-muted mb-4">{{ bioExtra }}</p>
+
+        <button class="btn btn-sm btn-outline-verde mb-3" (click)="toggleAbout()">
+          <i class="fas" [ngClass]="showAbout ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+          {{ showAbout ? 'Ver menos' : 'Ver más' }}
+        </button>
+
+        <!-- Enfoque profesional con *ngFor -->
+        <div class="mb-4">
+          <h5 class="text-verde fw-bold mb-3">Mi Enfoque:</h5>
+          <ul class="list-unstyled">
+            <li *ngFor="let enfoque of enfoques" class="mb-2">
+              <i class="fas fa-check text-verde me-2"></i> {{ enfoque }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN HABILIDADES ===== -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-verde fw-bold mb-5 display-5">
+      {{ 'habilidades' | titlecase }}
+    </h2>
+
+    <!-- Tarjetas de habilidades con *ngFor -->
+    <div class="row">
+      <div *ngFor="let habilidad of habilidades" class="col-md-6 col-lg-3 mb-4">
+        <div class="card card-skill border-0 shadow-sm h-100">
+          <div class="card-body text-center">
+            <i [class]="habilidad.icon" class="text-verde display-4 mb-3"></i>
+            <h5 class="card-title fw-bold">{{ habilidad.titulo | uppercase }}</h5>
+            <p class="card-text text-muted">{{ habilidad.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

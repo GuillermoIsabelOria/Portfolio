@@ -1,0 +1,108 @@
+<!-- ===== PÁGINA DE CONTACTO ===== -->
+<section class="py-5 bg-gradient-verde text-white">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5 display-5">
+      {{ 'contacto' | titlecase }}
+    </h2>
+
+    <!-- Mensaje de éxito con *ngIf -->
+    <div *ngIf="messageSent" class="row justify-content-center mb-4">
+      <div class="col-lg-8">
+        <div class="alert alert-light text-center fw-bold shadow" role="alert">
+          <i class="fas fa-check-circle text-verde me-2 fs-4"></i>
+          ¡Mensaje enviado correctamente! Te contactaré pronto.
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario Reactivo de Contacto -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+          <!-- Campo Nombre -->
+          <div class="mb-4">
+            <label for="nombre" class="form-label text-white fw-bold">Nombre</label>
+            <input type="text"
+                   class="form-control form-control-lg border-0 bg-light"
+                   id="nombre"
+                   formControlName="nombre"
+                   placeholder="Tu nombre"
+                   [ngClass]="{'is-invalid': submitted && f['nombre'].errors}">
+            <!-- Mensajes de error con *ngIf -->
+            <div *ngIf="submitted && f['nombre'].errors" class="invalid-feedback">
+              <span *ngIf="f['nombre'].errors['required']">El nombre es obligatorio.</span>
+              <span *ngIf="f['nombre'].errors['minlength']">El nombre debe tener al menos 2 caracteres.</span>
+            </div>
+          </div>
+
+          <!-- Campo Email -->
+          <div class="mb-4">
+            <label for="email" class="form-label text-white fw-bold">Email</label>
+            <input type="email"
+                   class="form-control form-control-lg border-0 bg-light"
+                   id="email"
+                   formControlName="email"
+                   placeholder="Tu email"
+                   [ngClass]="{'is-invalid': submitted && f['email'].errors}">
+            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+              <span *ngIf="f['email'].errors['required']">El email es obligatorio.</span>
+              <span *ngIf="f['email'].errors['email']">Introduce un email válido.</span>
+            </div>
+          </div>
+
+          <!-- Campo Asunto -->
+          <div class="mb-4">
+            <label for="asunto" class="form-label text-white fw-bold">Asunto</label>
+            <input type="text"
+                   class="form-control form-control-lg border-0 bg-light"
+                   id="asunto"
+                   formControlName="asunto"
+                   placeholder="Asunto del mensaje"
+                   [ngClass]="{'is-invalid': submitted && f['asunto'].errors}">
+            <div *ngIf="submitted && f['asunto'].errors" class="invalid-feedback">
+              <span *ngIf="f['asunto'].errors['required']">El asunto es obligatorio.</span>
+              <span *ngIf="f['asunto'].errors['minlength']">El asunto debe tener al menos 5 caracteres.</span>
+            </div>
+          </div>
+
+          <!-- Campo Mensaje -->
+          <div class="mb-4">
+            <label for="mensaje" class="form-label text-white fw-bold">Mensaje</label>
+            <textarea class="form-control form-control-lg border-0 bg-light"
+                      id="mensaje"
+                      rows="5"
+                      formControlName="mensaje"
+                      placeholder="Tu mensaje aquí..."
+                      [ngClass]="{'is-invalid': submitted && f['mensaje'].errors}">
+            </textarea>
+            <div *ngIf="submitted && f['mensaje'].errors" class="invalid-feedback">
+              <span *ngIf="f['mensaje'].errors['required']">El mensaje es obligatorio.</span>
+              <span *ngIf="f['mensaje'].errors['minlength']">El mensaje debe tener al menos 10 caracteres.</span>
+            </div>
+          </div>
+
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-light btn-lg fw-bold w-100">
+            <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Información de contacto con *ngFor -->
+    <div class="row mt-5 text-center">
+      <div *ngFor="let info of contactInfo" class="col-md-3 mb-3">
+        <div class="contact-card p-3">
+          <i [class]="info.icon" class="fs-3 mb-2"></i>
+          <h6 class="fw-bold">{{ info.label | uppercase }}</h6>
+          <p>
+            <a [href]="info.link" class="text-white" target="_blank">
+              {{ info.value }}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

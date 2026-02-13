@@ -1,4 +1,4 @@
-# 🚀 Portfolio Profesional de Guillermo Isabel Oria
+#  Portfolio Guillermo Isabel Oria
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -6,7 +6,7 @@
 
 ---
 
-## 📑 Tabla de Contenidos
+##  Tabla de Contenidos
 
 1. [Descripción General](#descripción-general)
 2. [Características](#características)
@@ -21,63 +21,63 @@
 
 ---
 
-## 📖 Descripción General
+##  Descripción General
 
 Este es un **portfolio profesional moderno y completamente responsivo** desarrollado para **Guillermo Isabel Oria**, Desarrollador Web Full Stack con 2 años de experiencia.
 
 El portfolio está diseñado con:
-- ✨ Diseño limpio y profesional
-- 🎨 Colores verde y blanco personalizados
-- 📱 Totalmente responsive
-- ⚡ Carga rápida y optimizada
-- 🎯 UX/UI intuitiva
+-  Diseño limpio y profesional
+-  Colores verde y blanco personalizados
+-  Totalmente responsive
+-  Carga rápida y optimizada
+-  UX/UI intuitiva
 
 ---
 
-## ✨ Características Principales
+##  Características Principales
 
-### 🎨 Diseño
-- ✅ Interfaz moderna y profesional
-- ✅ Paleta de colores verde y blanco
-- ✅ Tipografía clara y legible
-- ✅ Espaciado y proporciones equilibradas
+###  Diseño
+-  Interfaz moderna y profesional
+-  Paleta de colores verde y blanco
+-  Tipografía clara y legible
+-  Espaciado y proporciones equilibradas
 
-### 📱 Responsividad
-- ✅ Desktop (1920px+)
-- ✅ Laptop (1200px+)
-- ✅ Tablet (768px+)
-- ✅ Mobile (320px+)
-- ✅ Probado en todos los navegadores modernos
+###  Responsividad
+-  Desktop (1920px+)
+-  Laptop (1200px+)
+-  Tablet (768px+)
+-  Mobile (320px+)
+-  Probado en todos los navegadores modernos
 
-### ⚙️ Funcionalidades
-- ✅ Navegación sticky con scroll suave
-- ✅ Sección Hero con animaciones
-- ✅ Sección Sobre Mí con botón de CV
-- ✅ Galería de Habilidades
-- ✅ Portafolio de Proyectos
-- ✅ Sección de Contacto con formulario
-- ✅ Modal para video de presentación
-- ✅ Enlaces a redes sociales
+###  Funcionalidades
+-  Navegación sticky con scroll suave
+-  Sección Hero con animaciones
+-  Sección Sobre Mí con botón de CV
+-  Galería de Habilidades
+-  Portafolio de Proyectos
+-  Sección de Contacto con formulario
+-  Modal para video de presentación
+-  Enlaces a redes sociales
 
-### 🔧 Técnicas
-- ✅ HTML5 semántico
-- ✅ CSS3 con variables personalizadas
-- ✅ JavaScript modular
-- ✅ Bootstrap 5 integrado
-- ✅ Font Awesome para iconos
-- ✅ Animaciones suaves
-- ✅ Efectos hover interactivos
+###  Técnicas
+-  HTML5 semántico
+-  CSS3 con variables personalizadas
+-  JavaScript modular
+-  Bootstrap 5 integrado
+-  Font Awesome para iconos
+-  Animaciones suaves
+-  Efectos hover interactivos
 
-### ♿ Accesibilidad
-- ✅ Semántica HTML correcta
-- ✅ Alt text en todas las imágenes
-- ✅ Contraste de colores adecuado
-- ✅ Navegación por teclado
-- ✅ ARIA labels cuando es necesario
+###  Accesibilidad
+-  Semántica HTML correcta
+-  Alt text en todas las imágenes
+-  Contraste de colores adecuado
+-  Navegación por teclado
+-  ARIA labels cuando es necesario
 
 ---
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 Portfolio_Guillermo Isabel Oria/
@@ -111,7 +111,7 @@ Portfolio_Guillermo Isabel Oria/
     └── video/
 ```
 
-### 📊 Estadísticas del Código
+###  Estadísticas del Código
 - **HTML**: 291 líneas
 - **CSS**: 450+ líneas (comentado)
 - **JavaScript**: 180+ líneas (modular)
@@ -119,7 +119,7 @@ Portfolio_Guillermo Isabel Oria/
 
 ---
 
-## 🔍 Requisitos Previos
+##  Requisitos Previos
 
 Antes de comenzar, asegúrate de tener:
 
@@ -142,7 +142,7 @@ Antes de comenzar, asegúrate de tener:
 
 ---
 
-## 🚀 Instalación y Setup
+##  Instalación y Setup
 
 ### Opción 1: Uso Local Simple
 
@@ -154,7 +154,6 @@ cd Portfolio_Guillermo\ Isabel\ Oria
 # - Haz doble clic en index.html
 # - O abre index.html con tu navegador preferido
 
-# ¡Listo! El portfolio se abrirá inmediatamente
 ```
 
 ### Opción 2: Con Servidor Local (Recomendado)
@@ -185,9 +184,9 @@ php -S localhost:8000
 
 ---
 
-## 💻 Cómo Usar
+##  Cómo Usar
 
-### 📖 Navegación Básica
+###  Navegación Básica
 
 1. **Abre el Portfolio**
    - Abre `index.html` en tu navegador
@@ -204,7 +203,7 @@ php -S localhost:8000
    - Abre el modal de video
    - Completa el formulario de contacto
 
-### 🎥 Usar el Video de Presentación
+###  Usar el Video de Presentación
 
 #### Opción 1: Video Local
 ```html
@@ -223,7 +222,7 @@ php -S localhost:8000
 <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
 ```
 
-### 📄 Descargar CV
+###  Descargar CV
 
 El botón "Descargar mi CV" en la sección "Sobre Mí":
 1. Abre el archivo CV
@@ -232,7 +231,7 @@ El botón "Descargar mi CV" en la sección "Sobre Mí":
 
 ---
 
-## 🎨 Personalización
+##  Personalización
 
 ### Cambiar Colores
 
@@ -315,9 +314,9 @@ Conecta a tu servidor backend
 
 ---
 
-## 📦 Despliegue
+##  Despliegue
 
-### 🌐 Opción 1: GitHub Pages (Gratis)
+###  Opción 1: GitHub Pages (Gratis)
 
 ```bash
 # 1. Crear repositorio en GitHub
@@ -331,7 +330,7 @@ git push origin main
 # 5. Tu portfolio estará en: username.github.io/portfolio
 ```
 
-### 🚀 Opción 2: Netlify (Gratis)
+###  Opción 2: Netlify (Gratis)
 
 ```bash
 # 1. Ir a netlify.com
@@ -340,7 +339,7 @@ git push origin main
 # Tu portfolio estará en una URL pública
 ```
 
-### ⚡ Opción 3: Vercel (Gratis)
+###  Opción 3: Vercel (Gratis)
 
 ```bash
 # 1. Ir a vercel.com
@@ -349,7 +348,7 @@ git push origin main
 # Tu portfolio se actualizará con cada push
 ```
 
-### 🔧 Opción 4: Hosting Tradicional
+###  Opción 4: Hosting Tradicional
 
 **Usando cPanel/FTP:**
 1. Conecta con FTP
@@ -363,7 +362,7 @@ git push origin main
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 ### Frontend
 - **HTML5** - Estructura semántica
@@ -397,13 +396,13 @@ git push origin main
 ### Checklist de Conexiones
 
 ```
-✅ CSS cargando:      css/styles.css
-✅ JavaScript:        js/main.js
-✅ Imágenes:          images/
-✅ Videos:            videos/
-✅ Documentos:        documents/
-✅ Bootstrap CDN:     Online
-✅ Font Awesome CDN:  Online
+ CSS cargando:      css/styles.css
+ JavaScript:        js/main.js
+ Imágenes:          images/
+ Videos:            videos/
+ Documentos:        documents/
+ Bootstrap CDN:     Online
+ Font Awesome CDN:  Online
 ```
 
 ### Verificar en Navegador
@@ -416,7 +415,7 @@ Abre las DevTools (`F12`) y verifica:
 
 ---
 
-## 🐛 Solución de Problemas
+##  Solución de Problemas
 
 ### Problema: Las imágenes no cargan
 
@@ -455,7 +454,7 @@ Abre las DevTools (`F12`) y verifica:
 
 ---
 
-## 📊 Estadísticas del Portfolio
+##  Estadísticas del Portfolio
 
 | Métrica | Valor |
 |---------|-------|
@@ -469,7 +468,7 @@ Abre las DevTools (`F12`) y verifica:
 
 ---
 
-## 👤 Información de Contacto
+##  Información de Contacto
 
 **Guillermo Isabel Oria**
 - Email: [isabeloriaguille@gmail.com](mailto:isabeloriaguille@gmail.com)
@@ -479,30 +478,30 @@ Abre las DevTools (`F12`) y verifica:
 
 ---
 
-## 📜 Licencia
+##  Licencia
 
 Este proyecto está bajo la licencia **MIT**. Eres libre de usar, modificar y distribuir este código.
 
 ---
 
-## ✅ Checklist de Lanzamiento
+##  Checklist de Lanzamiento
 
 Antes de publicar tu portfolio:
 
-- [ ] ✅ Todas las imágenes se cargan correctamente
-- [ ] ✅ Los videos funcionan
-- [ ] ✅ El formulario valida correctamente
-- [ ] ✅ Los links a redes sociales funcionan
-- [ ] ✅ Responsive en móvil (probado)
-- [ ] ✅ Sin errores en DevTools console
-- [ ] ✅ CV se descarga correctamente
-- [ ] ✅ Scroll suave funciona
-- [ ] ✅ Animaciones se muestran
-- [ ] ✅ Navegación funciona en móvil
+- [ ]  Todas las imágenes se cargan correctamente
+- [ ]  Los videos funcionan
+- [ ]  El formulario valida correctamente
+- [ ]  Los links a redes sociales funcionan
+- [ ]  Responsive en móvil (probado)
+- [ ]  Sin errores en DevTools console
+- [ ]  CV se descarga correctamente
+- [ ]  Scroll suave funciona
+- [ ]  Animaciones se muestran
+- [ ]  Navegación funciona en móvil
 
 ---
 
-## 🚀 Próximas Mejoras
+##  Próximas Mejoras
 
 - [ ] Agregar más proyectos
 - [ ] Implementar backend para formulario
@@ -513,40 +512,40 @@ Antes de publicar tu portfolio:
 
 ---
 
-## 📝 Notas de Desarrollo
+##  Notas de Desarrollo
 
 - **Versión**: 1.0
 - **Fecha**: 28 de Noviembre de 2025
-- **Estado**: ✅ Producción
+- **Estado**:  Producción
 - **Mantenimiento**: Activo
 
 Para más información, consulta `CONFIGURACION.md`
 
 ---
 
-## 🎉 ¡Gracias!
+##  ¡Gracias!
 
 Gracias por usar este portfolio. Si tienes preguntas o sugerencias, no dudes en contactar.
 
-**¡Mucho éxito en tu búsqueda profesional!** 🚀
+**¡Mucho éxito en tu búsqueda profesional!** 
 
 ---
 
 **Última actualización**: 28 de Noviembre de 2025
 
-## ✨ Características
+##  Características
 
-- ✅ Diseño profesional con colores verde y blanco
-- ✅ Totalmente responsive (móvil, tablet, desktop)
-- ✅ Animaciones suaves y efectos hover
-- ✅ Sección de descarga de CV
-- ✅ Sección de presentación con video personal
-- ✅ Formulario de contacto
-- ✅ Enlaces a redes sociales (LinkedIn y GitHub)
-- ✅ Proyectos destacados
-- ✅ Información de habilidades técnicas
+-  Diseño profesional con colores verde y blanco
+-  Totalmente responsive (móvil, tablet, desktop)
+-  Animaciones suaves y efectos hover
+-  Sección de descarga de CV
+-  Sección de presentación con video personal
+-  Formulario de contacto
+-  Enlaces a redes sociales (LinkedIn y GitHub)
+-  Proyectos destacados
+-  Información de habilidades técnicas
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 Portfolio_Guillermo Isabel Oria/
@@ -561,7 +560,7 @@ Portfolio_Guillermo Isabel Oria/
     └── images/                    # Imágenes adicionales
 ```
 
-## 🎥 Configurar tu Video de Presentación
+##  Configurar tu Video de Presentación
 
 ### Opción 1: Usar YouTube (Recomendado)
 
@@ -608,7 +607,7 @@ Entonces el embed sería:
 2. Obtén el enlace embed
 3. Actualiza el iframe con el src de Vimeo
 
-## 📥 Descargar CV
+##  Descargar CV
 
 El botón de descarga de CV abre una página HTML formateada que puedes:
 - **Ver en el navegador:** Haz clic en "Descargar mi CV"
@@ -620,7 +619,7 @@ El botón de descarga de CV abre una página HTML formateada que puedes:
 assets/cv.html
 ```
 
-## 🎬 Crear tu Video de Presentación
+##  Crear tu Video de Presentación
 
 ### Contenido Recomendado (1-2 minutos):
 
@@ -654,19 +653,19 @@ assets/cv.html
 
 Para más opciones y fuentes de videos, consulta el archivo **SOURCES_VIDEOS.txt**
 
-## ☎️ Contacto
+##  Contacto
 
 - **Email:** isabeloriaguille@gmail.com
 - **Teléfono:** +34 634 85 50 84
 - **LinkedIn:** https://www.linkedin.com/in/guillermo-isabel-oria-03b928338
 - **GitHub:** https://github.com/GuillermoIsabelOria
 
-## 📱 Redes Sociales
+##  Redes Sociales
 
 - LinkedIn: https://www.linkedin.com/in/guillermo-isabel-oria-03b928338
 - GitHub: https://github.com/GuillermoIsabelOria
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 - **HTML5** - Estructura
 - **CSS3** - Estilos y animaciones
@@ -674,7 +673,7 @@ Para más opciones y fuentes de videos, consulta el archivo **SOURCES_VIDEOS.txt
 - **JavaScript** - Interactividad
 - **Font Awesome** - Iconos
 
-## 🚀 Cómo Usar
+##  Cómo Usar
 
 1. **Descarga o clona el proyecto**
 2. **Abre `index.html` en tu navegador**
@@ -682,21 +681,21 @@ Para más opciones y fuentes de videos, consulta el archivo **SOURCES_VIDEOS.txt
 4. **Personaliza el CV** editando `assets/cv.html`
 5. **Despliega en tu servidor web**
 
-## 📝 Cambios Realizados
+##  Cambios Realizados
 
-- ✅ Nombre actualizado a "Guillermo Isabel Oria"
-- ✅ Email: isabeloriaguille@gmail.com
-- ✅ Teléfono: +34 634 85 50 84
-- ✅ Experiencia: 2 años en el sector
-- ✅ Proyectos inventados con imágenes profesionales
-- ✅ Enlaces de redes sociales conectados (LinkedIn y GitHub)
-- ✅ Botón de descarga de CV
-- ✅ Sección de video de presentación
-- ✅ Twitter removido (solo LinkedIn y GitHub)
-- ✅ Footer con año 2025 y tu nombre
-- ✅ Sin enlaces a GitHub en los proyectos
+-  Nombre actualizado a "Guillermo Isabel Oria"
+-  Email: isabeloriaguille@gmail.com
+-  Teléfono: +34 634 85 50 84
+-  Experiencia: 2 años en el sector
+-  Proyectos inventados con imágenes profesionales
+-  Enlaces de redes sociales conectados (LinkedIn y GitHub)
+-  Botón de descarga de CV
+-  Sección de video de presentación
+-  Twitter removido (solo LinkedIn y GitHub)
+-  Footer con año 2025 y tu nombre
+-  Sin enlaces a GitHub en los proyectos
 
-## 📄 Próximos Pasos (Opcional)
+##  Próximos Pasos (Opcional)
 
 1. **Desplegar en línea:**
    - Usa GitHub Pages (gratis)
@@ -711,7 +710,7 @@ Para más opciones y fuentes de videos, consulta el archivo **SOURCES_VIDEOS.txt
    - Crea un sitemap
    - Incluye esquema JSON-LD
 
-## 📞 Soporte
+##  Soporte
 
 Para preguntas o cambios adicionales, no dudes en contactar.
 

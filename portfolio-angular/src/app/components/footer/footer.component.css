@@ -1,0 +1,17 @@
+/* Estilos del Footer */
+:host {
+  display: block;
+}
+
+footer {
+  border-top: 3px solid var(--color-verde);
+}
+
+footer a {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}

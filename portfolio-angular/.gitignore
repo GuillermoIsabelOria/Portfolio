@@ -1,0 +1,13 @@
+# Dependencies
+/node_modules
+
+# Build
+/dist
+
+# IDEs
+.idea/
+.vscode/
+
+# Misc
+*.log
+.angular/

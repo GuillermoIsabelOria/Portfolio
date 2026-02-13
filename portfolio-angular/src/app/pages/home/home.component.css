@@ -1,0 +1,50 @@
+/* Estilos de la página de Inicio */
+:host {
+  display: block;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  animation: slideInLeft 0.8s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p.lead {
+  animation: slideInUp 0.8s ease 0.2s both;
+  font-size: 1.3rem;
+}
+
+.hero .btn {
+  animation: slideInUp 0.8s ease 0.4s both;
+}
+
+.hero-image {
+  animation: slideInRight 0.8s ease;
+}
+
+.hero-image img {
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

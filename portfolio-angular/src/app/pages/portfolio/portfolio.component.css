@@ -1,0 +1,16 @@
+/* Estilos de la página Portfolio */
+:host {
+  display: block;
+}
+
+.project-detail {
+  animation: fadeIn 0.4s ease;
+  border-left: 4px solid var(--color-verde) !important;
+  background-color: #f0faf5 !important;
+  border-color: var(--color-verde) !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

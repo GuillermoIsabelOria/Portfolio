@@ -1,0 +1,57 @@
+<!-- ===== PÁGINA PORTFOLIO ===== -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center text-verde fw-bold mb-3 display-5">
+      {{ 'mis proyectos' | titlecase }}
+    </h2>
+    <p class="text-center text-muted mb-5">
+      Mostrando {{ totalProjects }} proyectos destacados
+    </p>
+
+    <!-- Panel de detalle del proyecto seleccionado con *ngIf -->
+    <div *ngIf="selectedProject" class="alert alert-success project-detail p-4 mb-5 shadow-sm">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <h4 class="fw-bold text-verde mb-2">
+            <i [class]="selectedProject.icon" class="me-2"></i>
+            {{ selectedProject.title | uppercase }}
+          </h4>
+          <p class="mb-2">{{ selectedProject.description }}</p>
+          <p class="text-muted small mb-2">
+            <i class="fas fa-calendar-alt me-1"></i>
+            Fecha: {{ selectedProject.dateAdded | date:'dd/MM/yyyy' }}
+          </p>
+          <div>
+            <span *ngFor="let tech of selectedProject.technologies"
+                  class="badge bg-verde me-2">
+              {{ tech }}
+            </span>
+          </div>
+        </div>
+        <button class="btn btn-sm btn-outline-danger" (click)="clearSelection()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Lista de proyectos con *ngFor y componente reutilizable app-project-card -->
+    <div class="row">
+      <div *ngFor="let project of projects" class="col-md-6 col-lg-4 mb-4">
+        <!--
+          Uso de @Input: Se pasa [project] al componente hijo.
+          Uso de @Output: Se escucha (projectSelected) del componente hijo.
+        -->
+        <app-project-card
+          [project]="project"
+          (projectSelected)="onProjectSelected($event)">
+        </app-project-card>
+      </div>
+    </div>
+
+    <!-- Mensaje cuando no hay proyectos con *ngIf -->
+    <div *ngIf="projects.length === 0" class="text-center py-5">
+      <i class="fas fa-folder-open text-muted display-1 mb-3"></i>
+      <p class="text-muted fs-5">No hay proyectos disponibles por el momento.</p>
+    </div>
+  </div>
+</section>

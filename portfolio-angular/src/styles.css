@@ -1,0 +1,390 @@
+/* ============================================================================
+   PORTFOLIO ANGULAR - ESTILOS GLOBALES
+   Guillermo Isabel Oria
+   ============================================================================ */
+
+/* Variables de Colores Personalizados */
+:root {
+  --color-verde: #27ae60;
+  --color-verde-oscuro: #1e8449;
+  --color-verde-claro: #d5f4e6;
+  --color-blanco: #ffffff;
+  --color-gris-claro: #f8f9fa;
+  --color-gris-oscuro: #343a40;
+}
+
+/* Reset y Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================================================
+   CLASES UTILITARIAS BOOTSTRAP PERSONALIZADAS
+   ============================================================================ */
+
+.bg-verde {
+  background-color: var(--color-verde) !important;
+}
+
+.bg-gradient-verde {
+  background: linear-gradient(135deg, var(--color-verde) 0%, var(--color-verde-oscuro) 100%) !important;
+}
+
+.text-verde {
+  color: var(--color-verde) !important;
+}
+
+.btn-verde {
+  background-color: var(--color-verde);
+  border-color: var(--color-verde);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-verde:hover {
+  background-color: var(--color-verde-oscuro);
+  border-color: var(--color-verde-oscuro);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+.btn-outline-verde {
+  color: var(--color-verde);
+  border-color: var(--color-verde);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-verde:hover {
+  background-color: var(--color-verde);
+  border-color: var(--color-verde);
+  color: white;
+}
+
+.badge.bg-verde {
+  background-color: var(--color-verde) !important;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+/* ============================================================================
+   NAVEGACIÓN
+   ============================================================================ */
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--color-verde-claro) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ============================================================================
+   SECCIÓN HERO
+   ============================================================================ */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  animation: slideInLeft 0.8s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  animation: slideInUp 0.8s ease 0.2s both;
+  font-size: 1.3rem;
+}
+
+.hero .btn {
+  animation: slideInUp 0.8s ease 0.4s both;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  animation: slideInRight 0.8s ease;
+}
+
+.hero-image img {
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ============================================================================
+   ANIMACIONES
+   ============================================================================ */
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================================================================
+   SECCIONES GENERALES
+   ============================================================================ */
+
+section {
+  position: relative;
+}
+
+section h2 {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-verde);
+  border-radius: 2px;
+}
+
+/* ============================================================================
+   TARJETAS DE HABILIDADES
+   ============================================================================ */
+
+.card-skill {
+  border-left: 4px solid var(--color-verde) !important;
+  border: none;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.card-skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(39, 174, 96, 0.2) !important;
+}
+
+.card-skill i {
+  transition: color 0.3s ease;
+}
+
+.card-skill:hover i {
+  color: var(--color-verde-oscuro) !important;
+}
+
+/* ============================================================================
+   TARJETAS DE PROYECTOS
+   ============================================================================ */
+
+.card-proyecto {
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card-proyecto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(39, 174, 96, 0.2) !important;
+}
+
+.card-proyecto img {
+  transition: transform 0.3s ease;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-proyecto:hover img {
+  transform: scale(1.1);
+}
+
+/* ============================================================================
+   FORMULARIO DE CONTACTO
+   ============================================================================ */
+
+.form-control {
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--color-verde);
+  box-shadow: 0 0 0 0.2rem rgba(39, 174, 96, 0.25);
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.invalid-feedback {
+  font-size: 0.85rem;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
+footer {
+  background-color: var(--color-gris-oscuro);
+  border-top: 3px solid var(--color-verde);
+}
+
+/* ============================================================================
+   DETALLE DE PROYECTO
+   ============================================================================ */
+
+.project-detail {
+  animation: fadeIn 0.5s ease;
+  border-left: 4px solid var(--color-verde);
+}
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .d-flex.gap-3 {
+    justify-content: center;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .card-proyecto {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ============================================================================
+   EFECTOS ADICIONALES
+   ============================================================================ */
+
+a, button {
+  transition: all 0.3s ease;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.border-5 {
+  border-width: 5px !important;
+}

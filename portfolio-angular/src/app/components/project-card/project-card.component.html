@@ -1,0 +1,39 @@
+<!-- Tarjeta de proyecto reutilizable con @Input (project) y @Output (projectSelected) -->
+<div class="card card-proyecto border-0 shadow-sm h-100 overflow-hidden">
+  <!-- Icono del proyecto -->
+  <div class="bg-light d-flex align-items-center justify-content-center project-icon-area">
+    <div class="text-center">
+      <i [class]="project.icon" class="project-icon"></i>
+      <p class="text-muted mt-2">{{ project.title }}</p>
+    </div>
+  </div>
+
+  <!-- Cuerpo de la tarjeta -->
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title fw-bold">{{ project.title }}</h5>
+    <p class="card-text text-muted flex-grow-1">{{ project.description }}</p>
+
+    <!-- Tecnologías con *ngFor -->
+    <div class="mb-3">
+      <span *ngFor="let tech of project.technologies" class="badge bg-verde me-2 mb-1">
+        {{ tech }}
+      </span>
+    </div>
+
+    <!-- Fecha añadido con pipe date -->
+    <p class="text-muted small mb-3">
+      <i class="fas fa-calendar-alt me-1"></i>
+      Añadido: {{ project.dateAdded | date:'longDate':'':'es' }}
+    </p>
+
+    <!-- Botones de acción -->
+    <div class="d-flex gap-2">
+      <button class="btn btn-sm btn-verde fw-bold flex-grow-1" (click)="onSelectProject()">
+        <i class="fas fa-eye me-1"></i>Ver Detalle
+      </button>
+      <a [href]="project.github" target="_blank" class="btn btn-sm btn-outline-verde fw-bold">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</div>

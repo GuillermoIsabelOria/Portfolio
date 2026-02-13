@@ -1,0 +1,19 @@
+<!-- Footer con *ngFor para redes sociales y data binding para el año -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <!-- Redes sociales con *ngFor -->
+    <div class="d-flex justify-content-center gap-3 mb-3">
+      <a *ngFor="let social of socialLinks"
+         [href]="social.url"
+         target="_blank"
+         class="text-white fs-4"
+         [attr.aria-label]="social.label"
+         [title]="social.label">
+        <i [class]="social.icon"></i>
+      </a>
+    </div>
+
+    <!-- Copyright con interpolación de año dinámico -->
+    <p class="mb-0">&copy; {{ currentYear }} Guillermo Isabel Oria. Todos los derechos reservados.</p>
+  </div>
+</footer>

@@ -1,0 +1,13 @@
+/* Estilos del Navbar */
+:host {
+  display: block;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: var(--color-verde-claro) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
