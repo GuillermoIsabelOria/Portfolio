@@ -23,7 +23,7 @@
 
 ##  Descripción General
 
-Este es un **portfolio profesional moderno y completamente responsivo** de **Guillermo Isabel Oria**, Técnico de Desarrollo Web con 2 años de estudio.
+Esto es mi **portfolio,** **Guillermo Isabel Oria**, Técnico de Desarrollo Web con 2 años de estudio.
 
 El portfolio está diseñado con:
 -  Diseño limpio y profesional
