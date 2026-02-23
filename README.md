@@ -23,7 +23,7 @@
 
 ##  Descripción General
 
-Este es un **portfolio profesional moderno y completamente responsivo** desarrollado para **Guillermo Isabel Oria**, Desarrollador Web Full Stack con 2 años de experiencia.
+Este es un **portfolio profesional moderno y completamente responsivo** de **Guillermo Isabel Oria**, Técnico de Desarrollo Web con 2 años de estudio.
 
 El portfolio está diseñado con:
 -  Diseño limpio y profesional
@@ -391,7 +391,7 @@ git push origin main
 
 ---
 
-## 🔍 Verificación de Rutas
+##  Verificación de Rutas
 
 ### Checklist de Conexiones
 
